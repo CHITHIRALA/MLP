@@ -1,5 +1,5 @@
 ---
-title: "Model using Random FOrest and prdict weight lifting performance"
+title: "Model using Random Forest and predict weight lifting performance"
 author: "RC"
 date: "Friday, November 21, 2014"
 output: html_document
@@ -43,7 +43,9 @@ View the data characterstics. Due to space constraints, I commented the commands
  #str(data)
 ```
 
-By looking at the results from the above commands, it is clear that we have two issues. 1: There are values #DIV/0! and some columns(variables) have very low completion rate (NA values)
+By looking at the results from the above commands, it is clear that we have two issues. 
+1: There are values #DIV/0! 
+2: Some columns(variables) have very low completion rate (NA values)
 
 Reload the data by ignoring #Div/0! 
 ```{r}
@@ -86,7 +88,7 @@ As seen by the result of the confusionmatrix, the model is good and efficient be
 
 
 
-Below is the code I used to the model above for predicting outcome for testing data set. I submitted the predictions and all 20 are correct. This also proves that this is a good model.
+Below is the code I used model created above for predicting outcome for testing data set. I submitted the predictions and all 20 are correct. This also proves that this is a good model.
 
 ```{r}
 testingFile = "pml-testing.csv"
